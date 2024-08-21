@@ -10,8 +10,8 @@ class TestController extends Controller
 {
     public function index()
     {
-        $subject = 'Test subject';
-        $body = 'Test message';
+        $subject = 'Test subject for attachment';
+        $body = 'Test message attachment';
 
         Mail::to('user@gmail.com')->send(new TestMail($subject, $body));
     }
